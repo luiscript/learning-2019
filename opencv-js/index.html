@@ -20,6 +20,23 @@
 </div>
 </div>
 <script type="text/javascript">
+   //template matching example
+
+  // let src = cv.imread('imageCanvasInput');
+  // let templ = cv.imread('templateCanvasInput');
+  // let dst = new cv.Mat();
+  // let mask = new cv.Mat();
+  // cv.matchTemplate(src, templ, dst, cv.TM_CCOEFF, mask);
+  // let result = cv.minMaxLoc(dst, mask);
+  // let maxPoint = result.maxLoc;
+  // let color = new cv.Scalar(255, 0, 0, 255);
+  // let point = new cv.Point(maxPoint.x + templ.cols, maxPoint.y + templ.rows);
+  // cv.rectangle(src, maxPoint, point, color, 2, cv.LINE_8, 0);
+  // cv.imshow('canvasOutput', src);
+  // src.delete(); dst.delete(); mask.delete();
+  
+  
+  
    // Here starts javascript. We save the loaded image in a variable called
    // imgElement 
    let imgElement = document.getElementById('imageSrc');
@@ -42,8 +59,6 @@
 
 function onOpenCvReady() {
   document.getElementById('status').innerHTML = 'OpenCV.js is ready.';
-  //console.log("cv", window.cv);
-  console.log("cv", cv);
 }
 </script>
 <script async src="opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>

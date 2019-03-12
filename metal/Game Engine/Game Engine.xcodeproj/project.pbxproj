@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB9130EF22373C0500E65CAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9130EE22373C0500E65CAD /* AppDelegate.swift */; };
+		CB9130F422373C0500E65CAD /* Game_Engine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB9130F222373C0500E65CAD /* Game_Engine.xcdatamodeld */; };
+		CB9130F622373C0600E65CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9130F522373C0600E65CAD /* Assets.xcassets */; };
+		CB9130F922373C0600E65CAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9130F722373C0600E65CAD /* Main.storyboard */; };
+		CB91310522373C0600E65CAD /* Game_EngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91310422373C0600E65CAD /* Game_EngineTests.swift */; };
+		CB91311022373C0700E65CAD /* Game_EngineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91310F22373C0700E65CAD /* Game_EngineUITests.swift */; };
+		CB91311F2237445400E65CAD /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91311E2237445400E65CAD /* GameView.swift */; };
+		CB9131212237492300E65CAD /* MyShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = CB9131202237492300E65CAD /* MyShaders.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB91310122373C0600E65CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9130E322373C0500E65CAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB9130EA22373C0500E65CAD;
+			remoteInfo = "Game Engine";
+		};
+		CB91310C22373C0700E65CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9130E322373C0500E65CAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB9130EA22373C0500E65CAD;
+			remoteInfo = "Game Engine";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB9130EB22373C0500E65CAD /* Game Engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game Engine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9130EE22373C0500E65CAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB9130F322373C0500E65CAD /* Game_Engine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Game_Engine.xcdatamodel; sourceTree = "<group>"; };
+		CB9130F522373C0600E65CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB9130F822373C0600E65CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB9130FA22373C0600E65CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB9130FB22373C0600E65CAD /* Game_Engine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Game_Engine.entitlements; sourceTree = "<group>"; };
+		CB91310022373C0600E65CAD /* Game EngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game EngineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB91310422373C0600E65CAD /* Game_EngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_EngineTests.swift; sourceTree = "<group>"; };
+		CB91310622373C0600E65CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB91310B22373C0700E65CAD /* Game EngineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game EngineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB91310F22373C0700E65CAD /* Game_EngineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_EngineUITests.swift; sourceTree = "<group>"; };
+		CB91311122373C0700E65CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB91311E2237445400E65CAD /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		CB9131202237492300E65CAD /* MyShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MyShaders.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB9130E822373C0500E65CAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9130FD22373C0600E65CAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB91310822373C0700E65CAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB9130E222373C0500E65CAD = {
+			isa = PBXGroup;
+			children = (
+				CB9130ED22373C0500E65CAD /* Game Engine */,
+				CB91310322373C0600E65CAD /* Game EngineTests */,
+				CB91310E22373C0700E65CAD /* Game EngineUITests */,
+				CB9130EC22373C0500E65CAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB9130EC22373C0500E65CAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB9130EB22373C0500E65CAD /* Game Engine.app */,
+				CB91310022373C0600E65CAD /* Game EngineTests.xctest */,
+				CB91310B22373C0700E65CAD /* Game EngineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB9130ED22373C0500E65CAD /* Game Engine */ = {
+			isa = PBXGroup;
+			children = (
+				CB91311E2237445400E65CAD /* GameView.swift */,
+				CB9130F722373C0600E65CAD /* Main.storyboard */,
+				CB9131202237492300E65CAD /* MyShaders.metal */,
+				CB91311D2237400900E65CAD /* Other Files */,
+			);
+			path = "Game Engine";
+			sourceTree = "<group>";
+		};
+		CB91310322373C0600E65CAD /* Game EngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB91310422373C0600E65CAD /* Game_EngineTests.swift */,
+				CB91310622373C0600E65CAD /* Info.plist */,
+			);
+			path = "Game EngineTests";
+			sourceTree = "<group>";
+		};
+		CB91310E22373C0700E65CAD /* Game EngineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB91310F22373C0700E65CAD /* Game_EngineUITests.swift */,
+				CB91311122373C0700E65CAD /* Info.plist */,
+			);
+			path = "Game EngineUITests";
+			sourceTree = "<group>";
+		};
+		CB91311D2237400900E65CAD /* Other Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB9130EE22373C0500E65CAD /* AppDelegate.swift */,
+				CB9130F522373C0600E65CAD /* Assets.xcassets */,
+				CB9130FA22373C0600E65CAD /* Info.plist */,
+				CB9130FB22373C0600E65CAD /* Game_Engine.entitlements */,
+				CB9130F222373C0500E65CAD /* Game_Engine.xcdatamodeld */,
+			);
+			path = "Other Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB9130EA22373C0500E65CAD /* Game Engine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB91311422373C0700E65CAD /* Build configuration list for PBXNativeTarget "Game Engine" */;
+			buildPhases = (
+				CB9130E722373C0500E65CAD /* Sources */,
+				CB9130E822373C0500E65CAD /* Frameworks */,
+				CB9130E922373C0500E65CAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Game Engine";
+			productName = "Game Engine";
+			productReference = CB9130EB22373C0500E65CAD /* Game Engine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB9130FF22373C0600E65CAD /* Game EngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB91311722373C0700E65CAD /* Build configuration list for PBXNativeTarget "Game EngineTests" */;
+			buildPhases = (
+				CB9130FC22373C0600E65CAD /* Sources */,
+				CB9130FD22373C0600E65CAD /* Frameworks */,
+				CB9130FE22373C0600E65CAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB91310222373C0600E65CAD /* PBXTargetDependency */,
+			);
+			name = "Game EngineTests";
+			productName = "Game EngineTests";
+			productReference = CB91310022373C0600E65CAD /* Game EngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB91310A22373C0700E65CAD /* Game EngineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB91311A22373C0700E65CAD /* Build configuration list for PBXNativeTarget "Game EngineUITests" */;
+			buildPhases = (
+				CB91310722373C0700E65CAD /* Sources */,
+				CB91310822373C0700E65CAD /* Frameworks */,
+				CB91310922373C0700E65CAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB91310D22373C0700E65CAD /* PBXTargetDependency */,
+			);
+			name = "Game EngineUITests";
+			productName = "Game EngineUITests";
+			productReference = CB91310B22373C0700E65CAD /* Game EngineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB9130E322373C0500E65CAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = luiscript;
+				TargetAttributes = {
+					CB9130EA22373C0500E65CAD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CB9130FF22373C0600E65CAD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CB9130EA22373C0500E65CAD;
+					};
+					CB91310A22373C0700E65CAD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CB9130EA22373C0500E65CAD;
+					};
+				};
+			};
+			buildConfigurationList = CB9130E622373C0500E65CAD /* Build configuration list for PBXProject "Game Engine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB9130E222373C0500E65CAD;
+			productRefGroup = CB9130EC22373C0500E65CAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB9130EA22373C0500E65CAD /* Game Engine */,
+				CB9130FF22373C0600E65CAD /* Game EngineTests */,
+				CB91310A22373C0700E65CAD /* Game EngineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB9130E922373C0500E65CAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9130F622373C0600E65CAD /* Assets.xcassets in Resources */,
+				CB9130F922373C0600E65CAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9130FE22373C0600E65CAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB91310922373C0700E65CAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB9130E722373C0500E65CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9131212237492300E65CAD /* MyShaders.metal in Sources */,
+				CB9130EF22373C0500E65CAD /* AppDelegate.swift in Sources */,
+				CB91311F2237445400E65CAD /* GameView.swift in Sources */,
+				CB9130F422373C0500E65CAD /* Game_Engine.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9130FC22373C0600E65CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB91310522373C0600E65CAD /* Game_EngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB91310722373C0700E65CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB91311022373C0700E65CAD /* Game_EngineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB91310222373C0600E65CAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB9130EA22373C0500E65CAD /* Game Engine */;
+			targetProxy = CB91310122373C0600E65CAD /* PBXContainerItemProxy */;
+		};
+		CB91310D22373C0700E65CAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB9130EA22373C0500E65CAD /* Game Engine */;
+			targetProxy = CB91310C22373C0700E65CAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB9130F722373C0600E65CAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB9130F822373C0600E65CAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB91311222373C0700E65CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB91311322373C0700E65CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CB91311522373C0700E65CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Game Engine/Other Files/Game_Engine.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = V3FZDZ7YCP;
+				INFOPLIST_FILE = "$(SRCROOT)/Game Engine/Other Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luiscript.Game-Engine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		CB91311622373C0700E65CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Game Engine/Other Files/Game_Engine.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Game Engine/Other Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luiscript.Game-Engine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		CB91311822373C0700E65CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = AR9RM9J5UT;
+				INFOPLIST_FILE = "Game EngineTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luiscript.Game-EngineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game Engine.app/Contents/MacOS/Game Engine";
+			};
+			name = Debug;
+		};
+		CB91311922373C0700E65CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = AR9RM9J5UT;
+				INFOPLIST_FILE = "Game EngineTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luiscript.Game-EngineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game Engine.app/Contents/MacOS/Game Engine";
+			};
+			name = Release;
+		};
+		CB91311B22373C0700E65CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = AR9RM9J5UT;
+				INFOPLIST_FILE = "Game EngineUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luiscript.Game-EngineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "Game Engine";
+			};
+			name = Debug;
+		};
+		CB91311C22373C0700E65CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = AR9RM9J5UT;
+				INFOPLIST_FILE = "Game EngineUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luiscript.Game-EngineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "Game Engine";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB9130E622373C0500E65CAD /* Build configuration list for PBXProject "Game Engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB91311222373C0700E65CAD /* Debug */,
+				CB91311322373C0700E65CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB91311422373C0700E65CAD /* Build configuration list for PBXNativeTarget "Game Engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB91311522373C0700E65CAD /* Debug */,
+				CB91311622373C0700E65CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB91311722373C0700E65CAD /* Build configuration list for PBXNativeTarget "Game EngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB91311822373C0700E65CAD /* Debug */,
+				CB91311922373C0700E65CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB91311A22373C0700E65CAD /* Build configuration list for PBXNativeTarget "Game EngineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB91311B22373C0700E65CAD /* Debug */,
+				CB91311C22373C0700E65CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB9130F222373C0500E65CAD /* Game_Engine.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB9130F322373C0500E65CAD /* Game_Engine.xcdatamodel */,
+			);
+			currentVersion = CB9130F322373C0500E65CAD /* Game_Engine.xcdatamodel */;
+			path = Game_Engine.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CB9130E322373C0500E65CAD /* Project object */;
+}

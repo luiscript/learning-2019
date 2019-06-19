@@ -79,8 +79,25 @@ fn basic_types()
     println!("g = {}, size = {} bytes", g, mem::size_of_val(&g));
 }
 
+fn scope_and_shadowing()
+{
+    let a = 123;
+   
+    {
+        let b = 456;
+        println!("inside, b = {}", b);
+
+        let a = 789;
+        println!("inside, a = {}", a);
+    }
+    //here b does not exists.
+    //println!("outside, b = {}" ,b);
+     println!("outside, a = {}", a);
+}
+
 fn main() {
     println!("Hello, world!");
-    basic_types();
-    operators();
+    //basic_types();
+    //operators();
+    scope_and_shadowing();
 }

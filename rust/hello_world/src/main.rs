@@ -1,5 +1,11 @@
 use std::mem;
 
+const MEANING_OF_LIFE:u8 = 42; // no fixed address
+static Z:i32 = 123;
+static mut X:i32 = 456;
+
+mod sh;
+
 fn operators()
 {
     //arithmetic
@@ -96,8 +102,19 @@ fn scope_and_shadowing()
 }
 
 fn main() {
-    println!("Hello, world!");
+    //println!("Hello, world!");
     //basic_types();
     //operators();
-    scope_and_shadowing();
+    //scope_and_shadowing();
+
+    //mutable static problem
+    // --> println!("{}", X);
+    //you need to use unsafe
+    unsafe
+    {
+        X = 789;
+        println!("{}", X);
+    }
+
+    sh::stack_and_heap();
 }

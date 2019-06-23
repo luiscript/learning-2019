@@ -146,6 +146,41 @@ fn for_loop(){
     }
 }
 
+fn match_statement(){
+    let country_code = 7;
+
+    let country = match country_code{
+        44 => "UK",
+        46 => "Sweden",
+        7 => "Russia",
+        //_ => "unknown"
+        1...999 => "unknown",
+        _ => "invalid"
+    };
+
+    //range with ... includes corner cases here the range include 1 and 999
+
+    println!("the country with code {} is {}", country_code, country);
+}
+
+struct Point{
+    x: f64,
+    y: f64
+}
+
+struct Line {
+    start: Point,
+    end: Point
+}
+
+fn structures(){
+    let p = Point { x: 3.0, y: 4.0 };
+    println!("point p is at ({},{})", p.x, p.y);
+
+    let p2 = Point { x: 5.0, y: 10.0 };
+
+    let myLine = Line { p, p2 };
+}
 
 fn main() {
     //println!("Hello, world!");
@@ -156,16 +191,21 @@ fn main() {
     //mutable static problem
     // --> println!("{}", X);
     //you need to use unsafe
-    unsafe
-    {
-        X = 789;
-        println!("{}", X);
-    }
+    // unsafe
+    // {
+    //     X = 789;
+    //     println!("{}", X);
+    // }
 
     //sh::stack_and_heap();
 
     //if_statement();
     //while_and_loop();
-    for_loop();
+    //for_loop();
+
+    //match_statement();
+
+    structures();
+
 
 }

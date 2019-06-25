@@ -8,9 +8,21 @@ I'll be focusing my studies in this topics:
 2. Rust
 3. GLSL & Metal shaders
 4. Mastering modern C++
+5. Swift
 6. Random stuff
 
 ## Machine learning
-I'm studyng a [machine learning for javascript](https://www.udemy.com/machine-learning-with-javascript/) course on Udemy. So far so good. I want to apply this on a private project for my company in the fintech industry to create a model that predicts if a client is a good candidate for a loan.
+Taking this [machine learning for javascript](https://www.udemy.com/machine-learning-with-javascript/) course on Udemy.
+
+## Rust 
+Taking this [The Rust programming language](https://www.udemy.com/rust-lang/) course on Udemy.
+
+## Swift
+Reading this: [The Swift programming language](https://books.apple.com/us/book/the-swift-programming-language-swift-5-0/id881256329) book from Apple.
+
+## Juce
+Taking this [Intro to audio plugin development](https://www.kadenze.com/courses/intro-to-audio-plugin-development) course on Kadenze.
+
+
 
 **luiscript. 2019**

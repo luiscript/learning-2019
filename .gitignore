@@ -1,2 +1,4 @@
 node_modules/
-target/
+rust/hello_world/target/*
+**/Builds/**
+**/debug/*/*/*

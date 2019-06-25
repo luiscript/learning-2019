@@ -179,8 +179,74 @@ fn structures(){
 
     let p2 = Point { x: 5.0, y: 10.0 };
 
-    let myLine = Line { p, p2 };
+    let myLine = Line { start: p, end: p2 };
 }
+
+
+enum Color{
+    Red,
+    Green, 
+    Blue,
+    RgbColor(u8, u8, u8),
+    CmykColor{cyan:u8, magenta:u8, yellow:u8, black:u8}
+}
+
+fn enums(){
+    let c:Color = Color::RgbColor(0,10,0);
+    //let c:Color = Color::CmykColor{cyan: 0, magenta:128, yellow:0, black: 205};
+    match c{
+        Color::Red => println!("red"),
+        Color::Green => println!("green"),
+        Color::Blue => println!("blue"),
+        Color::RgbColor(0,0,0) 
+        | Color::CmykColor{cyan:_, magenta:_, yellow:_, black: 255} => println!("black"),
+        Color::RgbColor(r,g,b) => println!("rbg({},{},{})", r,g,b),
+        _ => ()
+
+    }
+}
+
+//32 bits
+/*
+The key property of unions is that all fields of a union share common storage. 
+As a result writes to one field of a union can overwrite its other fields, 
+and size of a union is determined by the size of its largest field.
+
+A value of a union type can be created using the same syntax that is used for struct types, 
+except that it must specify exactly one field.
+
+*/
+
+union IntOrFloat{
+    i: i32,
+    f: f32
+}
+
+fn process_value(iof: IntOrFloat){
+    unsafe {
+        match iof{
+            IntOrFloat { i : 42 } => {
+                println!("meaning of life value");
+            }
+
+            IntOrFloat { f } => {
+                println!("value = {}", f);
+            }
+        }
+    }
+}
+
+fn unions(){
+    let mut iof = IntOrFloat {i: 123 };
+    iof.i = 234;
+
+    //unsefe because value could be integer or float
+    let value = unsafe { iof.i };
+    println!("iof.i = {}", value);
+
+    process_value(IntOrFloat{f : 4});
+}
+
 
 fn main() {
     //println!("Hello, world!");
@@ -205,7 +271,11 @@ fn main() {
 
     //match_statement();
 
-    structures();
+    //structures();
+
+    //enums();
+
+    unions();
 
 
 }

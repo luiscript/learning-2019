@@ -244,9 +244,32 @@ fn unions(){
     let value = unsafe { iof.i };
     println!("iof.i = {}", value);
 
-    process_value(IntOrFloat{f : 4});
+    process_value(IntOrFloat{f : 4.0});
 }
 
+/*
+Type Option represents an optional value: 
+every Option is either Some and contains a value, or None, and does not. 
+Option types are very common in Rust code, 
+as they have a number of uses.Color
+*/
+
+fn option(){
+    let x = 3.0;
+    let y = 2.0;
+
+    let result:Option<f64> = 
+        if y != 0.0 { Some(x/y) } else { None };
+
+    println!("{:?}", result);
+
+    match result {
+        Some(z) => println!("{}/{} = {}", x, y, z),
+        None    => println!("cannot divide {} by {}", x, y) 
+    }
+
+    if let Some(z) = result { println! ("z = {}", z); }
+}
 
 fn main() {
     //println!("Hello, world!");
@@ -275,7 +298,9 @@ fn main() {
 
     //enums();
 
-    unions();
+    //unions();
+
+    option();
 
 
 }

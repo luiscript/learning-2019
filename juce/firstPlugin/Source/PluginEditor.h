@@ -16,8 +16,8 @@
 //==============================================================================
 /**
 */
-class FirstPluginAudioProcessorEditor  : public AudioProcessorEditor,
-                                         public Slider::Listener
+class FirstPluginAudioProcessorEditor  : public AudioProcessorEditor
+//,public Slider::Listener
 {
 public:
     FirstPluginAudioProcessorEditor (FirstPluginAudioProcessor&);
@@ -27,7 +27,7 @@ public:
     void paint (Graphics&) override;
     void resized() override;
     
-    void sliderValueChanged(Slider* slider) override;
+   // void sliderValueChanged(Slider* slider) override;
 
 private:
     

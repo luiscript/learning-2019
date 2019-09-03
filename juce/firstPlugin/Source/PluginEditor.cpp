@@ -27,7 +27,22 @@ FirstPluginAudioProcessorEditor::FirstPluginAudioProcessorEditor (FirstPluginAud
     mGainControlSlider.setTextBoxStyle(Slider::NoTextBox, true, 0, 0);
     mGainControlSlider.setRange(gainParameter->range.start, gainParameter->range.end);
     mGainControlSlider.setValue(*gainParameter);
-    mGainControlSlider.addListener(this);
+    //mGainControlSlider.addListener(this);
+    mGainControlSlider.onValueChange = [this, gainParameter]
+    {
+        *gainParameter = mGainControlSlider.getValue();
+    };
+    
+    mGainControlSlider.onDragStart = [gainParameter]
+    {
+        gainParameter->beginChangeGesture();
+    };
+    
+    mGainControlSlider.onDragEnd = [gainParameter]
+    {
+        gainParameter->endChangeGesture();
+    };
+    
     addAndMakeVisible(mGainControlSlider);
 }
 
@@ -52,9 +67,9 @@ void FirstPluginAudioProcessorEditor::resized()
     // subcomponents in your editor..
 }
 
-void FirstPluginAudioProcessorEditor::sliderValueChanged(Slider * slider)
+/*void FirstPluginAudioProcessorEditor::sliderValueChanged(Slider * slider)
 {
-    auto& params = processor.getParameters();
+  auto& params = processor.getParameters();
     if(slider == &mGainControlSlider)
     {
         AudioParameterFloat* gainParameter = (AudioParameterFloat*)params.getUnchecked(0);
@@ -62,3 +77,4 @@ void FirstPluginAudioProcessorEditor::sliderValueChanged(Slider * slider)
     }
     
 }
+*/
